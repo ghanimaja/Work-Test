@@ -1,0 +1,25 @@
+BACKGROUND
+
+For this case study, think of an imaginary company. The company serves Clients where each Client is handled by Client Team Leader(s), Agent(s), and a Customer Success Manager.
+"Clients" are the companies that we provide service for. "Customers" are the people who purchase our Client's product. Agent(s) directly provide service to the Clients. Everytime a Client Team Leader or Agent or anyone is assigned to a client, the event is recorded in the so called Position Time Machine table.
+
+DATA
+
+In the 'Position Time Machine' sheet, there are 10 columns with the following information:
+
+"position_id --> ID of the event
+created_at --> the time where the event was created by the system
+relationship --> relationship between left to_param and right to_param
+left type --> the type of the left entity
+left to_param --> unique identifier for the left entity
+right type --> the type of the right entity
+right to_param --> unique identifier for the right entity
+start_at --> the time when the event starts
+end_at --> the time when the event ends
+duration --> duration of the event"
+
+
+QUESTIONS
+1. Write in order, the top 5 clients that can be called as the biggest starter at the company. Hint: To get this, you'll need to measure and compare the team size of the clients in their first month of service. Assume: First month of service is the month where very first movement happens.
+2. What is the typical client lifetime? Please consider and mention specifically the statistical quantity you use to determine this value.
+
